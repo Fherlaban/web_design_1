@@ -40,3 +40,27 @@ body {
         opacity: 0;
     }
 }
+
+.first-block {
+    position: absolute;
+    width: 0%;
+    height: 100vh;
+    background: #272727;
+    animation: go-left 4s cubic-bezier(.74, .86, .4, .92) forwards;
+    left: 0;
+}
+
+@keyframes go-left {
+    0% {
+        left: 0;
+        width: 0%;
+    }
+    50% {
+        left: 0;
+        width: 100%;
+    }
+    100% {
+        left: 100%;
+        width: 0;
+    }
+}
