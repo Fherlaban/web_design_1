@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800,900&display=swap');
 html,
 body {
     margin: 0%;
@@ -180,6 +181,7 @@ body {
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 18px;
+    letter-spacing: 5px;
 }
 
 .content {
@@ -192,9 +194,10 @@ body {
 }
 
 .heading {
-    font-family: Poppins;
+    font-family: Montserrat;
     font-weight: bolder;
     font-size: 42px;
+    letter-spacing: 1px;
 }
 
 .desc {
@@ -206,7 +209,7 @@ body {
     margin-top: 0px;
 }
 
-button {
+.link {
     font-family: Poppins;
     border-radius: none;
     padding: 16px 40px;
@@ -288,4 +291,13 @@ img {
     bottom: 0;
     left: 0;
     margin: 2em;
+}
+
+.play {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
 }
