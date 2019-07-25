@@ -63,6 +63,9 @@ body {
     position: absolute;
     width: 0%;
     height: 100vh;
+    background: #F0F0F0;
+    animation: expandNow 1.4s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 6.2s;
 }
 
 @keyframes go-left {
@@ -77,6 +80,15 @@ body {
     100% {
         left: 100%;
         width: 0;
+    }
+}
+
+@keyframes expandNow {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 64%;
     }
 }
 
@@ -150,4 +162,30 @@ body {
 
 .loader ul li:nth-child(7) {
     animation-delay: 1.6s;
+}
+
+.menu {
+    position: absolute;
+    right: 0%;
+    margin: 2em;
+    font-size: 18px;
+}
+
+.logo {
+    position: absolute;
+    left: 0%;
+    margin: 2em;
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.content {
+    position: absolute;
+    width: 440px;
+    top: 46%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    text-align: left;
 }
